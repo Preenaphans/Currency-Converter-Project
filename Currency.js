@@ -1,10 +1,10 @@
 function toUSD(bath){
-    let value = bath*35.4310
+    let value = bath*0.02823
     return value.toFixed(2) + "ดอลลาร์สหรัฐ"
 }
 
-function toTHB(bath) {
-    let value = bath*0.02822
+function toTHB(usd) {
+    let value = usd*35.435
     return value.toFixed(2) + "บาท"
 }
 
