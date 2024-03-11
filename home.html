@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>แปลงสกุลเงิน</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/6369/6369589.png">
+    
+</head>
+<body>
+    <div style="background:#fdeca0; width: 500px; height: 200px; margin:0px auto; border-radius: 40px;">
+    <h1 style="text-align: center; padding-top: 20px;">โปรแกรมแปลงสกุลเงิน</h1>
+    <div class="container">
+        <form style="display: flex; flex-direction: column;">
+        <label for="Currency" style="margin-top: 10px;">ต้องการแปลงเป็น:
+            <select id="currency" name="Currency">
+                <option value="THB">บาท</option>
+                <option value="USD">ดอลลาร์สหรัฐ</option>
+              </select>
+        </label>
+        <label for="number">ใส่จำนวนเงิน:
+            <input type="text" id="inputValue"></label>
+        <button onclick="display(document.getElementById('inputValue').value)">แปลง</button>
+      </form>
+      <script src="Currency.js"></script>
+      </div>
+    </div>
+</body>
+
+</html>
